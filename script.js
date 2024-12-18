@@ -4,7 +4,7 @@ const sendMessageButton = document.querySelector("#send-message");
 const fileUploadButton = document.querySelector("#file-upload")
 
 // API setup
-const API_KEY = "AIzaSyBlaxVMOXvHR228C1dkZg75A-UOCM-u9yc"; // Replace with your valid API key
+const API_KEY = "AIzaSyBlaxVMOXvHR228C1dkZg75A-UOCM-u9yc"; 
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
 
 const userData = {
