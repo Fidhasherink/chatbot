@@ -119,13 +119,3 @@ fileUploadButton.addEventListener("click", () => {
     fileInput.click();
 });
 
-// Display selected file 
-fileInput.addEventListener("change", () => {
-    const file = fileInput.files[0];
-    if (file) {
-        const fileMessage = `<div class="message-text">📎 File Uploaded: ${file.name}</div>`;
-        const fileElement = createMessageElement(fileMessage, "user-message");
-        chatBody.appendChild(fileElement);
-        chatBody.scrollTop = chatBody.scrollHeight;
-    }
-});
