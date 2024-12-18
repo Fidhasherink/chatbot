@@ -24,7 +24,7 @@ const handleOutgoingMessage = (e) => {
     e.preventDefault();
     userData.message = messageInput.value.trim();
 
-    if (!userData.message && !fileInput.files.lenght) return; // Avoid sending empty messages
+    if (!userData.message && !fileInput.files.length) return; 
 
     // Display user message
     const messageContent = `<div class="message-text">${userData.message}</div>`;
@@ -119,7 +119,7 @@ fileUploadButton.addEventListener("click", () => {
     fileInput.click();
 });
 
-// Display selected file (optional)
+// Display selected file 
 fileInput.addEventListener("change", () => {
     const file = fileInput.files[0];
     if (file) {
